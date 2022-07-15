@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #ffffff;
     font-family: "Roboto", sans-serif;
     color: #445361;
     display: flex;
@@ -17,45 +17,78 @@ body {
 .heading {
     text-align: center;
     font-size: 2rem;
-    height: 40px;
+    height: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Game area */
 .game-area {
     width: 85%;
-    height: 20vh;
+    height: auto;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
 }
 
 .option {
         text-align: center;
-        padding: 15px;
+        padding: 10px;
         border-radius: 50%;
         border: 5px solid;
         font-size: 2rem;
-        margin: 15px 30px;
+        margin: 10px 30px;
         display: inline-flex;
         justify-content: center;
         align-items: center;
         width: 75px;
         height: 75px;
         cursor: pointer;
+        background-color: #ffffff;
 }
+
+.cchoice {
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.option.active {
+    border-color: red;
+  }
+  
+  .option:hover > img {
+    transform: scale(1.1);
+  }
+  
+  .option > img {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
 
 .players {
     display: inline-flex;
     flex: 1;
-    padding: 10px 25px;
+    align-content: space-between;
   }
 
 /* Results */
 
 .results {
     display: inline-block;
-    padding: 25px;
+    padding: 15px;
     font-size: 2rem;
 }
