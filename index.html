@@ -16,47 +16,56 @@
     <body>
         <header>
             <div>
-                <h1>Spock Rock Lizzard Scissors Paper</h1>
+                <h1 class="heading">Spock - Rock - Lizzard - Scissors - Paper</h1>
             </div>
         </header>
+
         <section>
             <div>
-                <img src="assets/images/hero-image4.webp" alt="Game description of what hand neats what and how to win Spock-Rock-Lizzard-Scissors-Paper">
+                <img src="assets/images/hero.webp" alt="Game description of what hand neats what and how to win Spock-Rock-Lizzard-Scissors-Paper">
             </div>
         </section>
         
         <div class="game-area">
-            
+            <div>
+                <h2>Pick Your Hand</h2>
+            </div>
             <div class="players">
-                <h2>choose your hand!</h2>
                 <button class="option" data-index="0">
-                    <img src="#" alt="Lizard" title="Lizard" />
+                    <img src="assets/images/spock.webp" alt="Spock" title="" />
                 </button>
                 <button class="option" data-index="1">
-                    <img src="#" alt="Paper" title="Paper" />
+                    <img src="assets/images/rock.webp" alt="Rock" title="" />
                 </button>
                 <button class="option" data-index="2">
-                    <img src="#" alt="Rock" title="Rock" />
+                    <img src="assets/images/lizzard.webp" alt="Lizzard" title="" />
                 </button>
                 <button class="option" data-index="3">
-                    <img src="#" alt="Scissor" title="Scissor" />
+                    <img src="assets/images/scissors.webp" alt="Scissor" title="" />
                 </button>
                 <button class="option" data-index="4">
-                    <img src="#" alt="Spock" title="Spock" />
+                    <img src="assets/images/paper.webp" alt="Paper" title="" />
                 </button>
             </div>
         </div>
-        <div>   
+        <div class="game-area">   
             <div class="players">
-                  <span class="option"></span>  
+                <div>
+                    <h2>Computers pick!</h2>
+                </div>
+                <div class="option"></div>  
             </div>
         </div>
 
         <results class="result">
+            <div>
+                <div class="winner"></div>
+            </div>
+
             <div id="score">
-                <span id="Player1-score" class="points"> Player 1 : 0</span>
+                <span id="Player1-score" class="points"> User = 0</span>
                 :
-                <span id="Computer-score" class="points">Computer : 0</span>
+                <span id="Computer-score" class="points">Computer = 0</span>
             </div>  
         </results>
         
