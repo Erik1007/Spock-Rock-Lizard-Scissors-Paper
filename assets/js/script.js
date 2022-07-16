@@ -1,32 +1,8 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-  let pchoice, ccoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
-
-  let winner = [
-    (0 > 3),
-    (0 > 1),
-    (1 > 2),
-    (1 > 3),
-    (2 > 0),
-    (2 > 4), 
-    (3 > 4),
-    (3 > 2), 
-    (4 > 1),
-    [4 > 0],
-  ];
-
-  const winrule = {
-    Spock : ["Scissor", "Rock"],
-
-    Rock : [ "Lizzard", "Scissor"], 
-
-    Lizard : ["Spock", "Paper"], 
-
-    Scissor : ["Paper", "Lizzard"], 
-
-    Paper : ["Rock", "Spock"],
-  };
+  let pchoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
+  let ccoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
 
   function runGame() {
     let options = document.querySelectorAll(".pChoice");
