@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- font awesome and google fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
@@ -13,63 +12,69 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Spock Rock Lizzard Scissors Paper</title>
 </head>
-    <body>
-        <header>
-            <div>
-                <h1 class="heading">Spock - Rock - Lizzard - Scissors - Paper</h1>
-            </div>
-        </header>
 
-        <section>
-            <div>
-                <img src="assets/images/hero1.webp" alt="Game description of what hand choice beats what and how to win Spock-Rock-Lizzard-Scissors-Paper">
-            </div>
-        </section>
-        
-        <div class="game-area">
-            <div>
-                <h2>Pick Your Hand</h2>
-            </div>
-            <div class="players">
-                <button class="option" data-index="0">
-                    <img src="assets/images/spock.webp" alt="Spock" title="" />
-                </button>
-                <button class="option" data-index="1">
-                    <img src="assets/images/rock.webp" alt="Rock" title="" />
-                </button>
-                <button class="option" data-index="2">
-                    <img src="assets/images/lizzard.webp" alt="Lizzard" title="" />
-                </button>
-                <button class="option" data-index="3">
-                    <img src="assets/images/scissors.webp" alt="Scissor" title="" />
-                </button>
-                <button class="option" data-index="4">
-                    <img src="assets/images/paper.webp" alt="Paper" title="" />
-                </button>
-            </div>
+<body>
+    <header>
+        <div>
+            <h1 class="heading">Spock - Rock - Lizzard - Scissors - Paper</h1>
         </div>
-        <div class="game-area">   
+        <div>
+            <img src="assets/images/hero1.webp"
+                alt="Game description of what hand choice beats what and how to win Spock-Rock-Lizzard-Scissors-Paper">
+        </div>
+    </header>
+
+    <div class="game-area">
+        <div>
+            <h2>Pick Your Hand</h2>
+        </div>
+        <div class="players">
+            <button class="option" data-index="0">
+                <img src="assets/images/spock.webp" alt="Spock" title="" />
+            </button>
+            <button class="option" data-index="1">
+                <img src="assets/images/rock.webp" alt="Rock" title="" />
+            </button>
+            <button class="option" data-index="2">
+                <img src="assets/images/lizzard.webp" alt="Lizzard" title="" />
+            </button>
+            <button class="option" data-index="3">
+                <img src="assets/images/scissors.webp" alt="Scissor" title="" />
+            </button>
+            <button class="option" data-index="4">
+                <img src="assets/images/paper.webp" alt="Paper" title="" />
+            </button>
+        </div>
+    </div>
+    <div class="game-area">
+        <div>
             <div>
-                <div>
-                    <h2>Computer's pick</h2>
-                </div>
-                <div class="cchoice"></div>  
+                <h2>Computer's pick</h2>
             </div>
+            <div class="cchoice"></div>
+        </div>
+    </div>
+
+    <results class="result">
+        <div>
+            <div class="winner"></div>
         </div>
 
-        <results class="result">
-            <div>
-                <div class="winner"></div>
-            </div>
+        <div>
+            <h2 class="players">Best of 7</h2>
+        </div>
+        <div>
+            <span id="Player1-score" class="points">
+                <h3 class="players">Player = 0</h3>
+            </span>
+            <h2 class="players">:</h2>
+            <span id="Computer-score" class="points">
+                <h3 class="players">Computer = 0</h3>
+            </span>
+        </div>
+    </results>
 
-            <div class="players">
-                <span id="Player1-score" class="points"> <h2>Player = 0</h2></span>
-                
-                <span id="Computer-score" class="points"><h2>Computer = 0</h2></span>
-            </div>  
-        </results>
-        
+    <script src="assets/js/script.js"></script>
+</body>
 
-        <script src="assets/js/script.js"></script>
-    </body>
 </html>
