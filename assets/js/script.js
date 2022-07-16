@@ -108,12 +108,21 @@
   }
   
 
-  function incrementPlayerScore() {
-
+  function incrementScore() {
+    document.getElementById("pScore").textContent = pScore;
+    document.getElementById("cScore").textContent = cScore;
   }
 
-  function incrementComputerScore() {
-
+  function winner() {
+    if (pScore === 4 || cScore === 4) {
+      let winner =
+        pScore === 4
+          ? "You win the game! Congratulations!"
+          : "Computer wins the game! Try again next time!";
+      alert(winner);
+      return true;
+    }
+    return false;
   }
 
   function reset() {
