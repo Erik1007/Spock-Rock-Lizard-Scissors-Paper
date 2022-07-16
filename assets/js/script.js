@@ -53,46 +53,56 @@
         return;
       }
     
-    if (pChoice === "Spock") {
+      else if (pChoice === "Spock") {
         if (cChoice === "Scissors", "Rock") {
           alert(`${currentMatch} = You Win`);
+          pScore++;
         } else if (cChoice === "Lizzard", "paper") {
           alert(`${currentMatch} = Computer Wins`);
+          cScore++;
         }
       }
       // Rock
-      if (pChoice === "Rock") {
+      else if (pChoice === "Rock") {
         if (cChoice === "Lizzard", "Scissors") {
           alert (`${currentMatch} = You Win`);
+          pScore++;
         } else if (cChoice === "Paper", "Spock") {
           alert (`${currentMatch} = Computer Wins`);
+          cScore++;
         }
       }
 
       // Lizzard
-      if (pChoice === "Lizzard") {
+      else if (pChoice === "Lizzard") {
         if (cChoice === "Spock", "Paper") {
           alert (`${currentMatch} = You Win`);
+          pScore++;
         } else if (cChoice === "Scissors", "Rock") { 
           alert (`${currentMatch} = Computer Wins`);
+          cScore++;
         }
       }
 
       // Scissors
-      if (pChoice === "Scissors") {
+      else if (pChoice === "Scissors") {
         if (cChoice === "Paper", "Lizzard") {
           alert (`${currentMatch} = You Win`);
+          pScore++;
         } else if (cChoice === "Spock", "Rock") {
           alert (`${currentMatch} = Computer Wins`);
+          cScore++;
         }
       }
 
       // Paper
-      if (pChoice === "Paper") {
+      else if (pChoice === "Paper") {
         if (cChoice === "Rock", "Spock") {
           alert(`${currentMatch} = You Win`);
-        } else { (cChoice === "Lizzard", "Scissors")
+          pScore++;
+        } else if (cChoice === "Lizzard", "Scissors") {
           alert(`${currentMatch} = Computer Wins`);
+          cScore++;
         }
       }
   }
