@@ -13,23 +13,18 @@
     Paper : ["Rock", "Spock"],
   };
 
-  document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let gameType = this.getAttribute("data-type");
-                runGame(gameType);
-            }
-        });
-    }
-});
-
   function runGame() {
+    let options = document.querySelectorAll(".pchoice");
+    let pChoice = document.getElementsByTagName("button");
 
+    options.forEach((option) => {
+      option.addEventListener("click", function () {
+        let pInput = this.textContent;
+
+        let cOptions = ["Spock", "Rock", "Lizzard","Scissors", "Paper"];
+        let cInput = cOptions[Math.floor(Math.random() * length)];
+      });
+    });
   }
 
   function checkAnswer() {
