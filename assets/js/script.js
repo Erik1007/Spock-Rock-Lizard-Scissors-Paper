@@ -120,7 +120,7 @@ let options = [
 
     reset.addEventListener("click", function () {    
       document.getElementById("reset"); {
-        pScore.innerHTML = "0";
-        cScore.innerHTML = "0";
+        pScore.innerHTML = "Player = 0";
+        cScore.innerHTML = "Computer = 0";
       }
   });

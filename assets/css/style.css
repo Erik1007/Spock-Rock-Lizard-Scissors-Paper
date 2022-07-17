@@ -1,7 +1,7 @@
 body {
-  background-color: #e8e6e6;
+  background-image: url(/assets/images/background1.jpg);
   font-family: "Roboto", sans-serif;
-  color: #445361;
+  color: #3a3a3a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,10 @@ body {
 .heading {
   text-align: center;
   font-size: 2rem;
-  height: 20px;
+}
+
+.heading-img {
+  display: flex;
 }
 
 h2, h3 {
@@ -26,14 +29,16 @@ h2, h3 {
 }
 
 /* Game area */
+
 .game-area {
+  display: flex;
   width: 85%;
   height: auto;
-  max-height: 450px;
-  max-width: 830px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Buttons/Options */
 
 #options {
   text-align: center;
@@ -64,10 +69,6 @@ h2, h3 {
   background-color: #ffffff;
 }
 
-#options.active {
-  border-color: red;
-}
-
 #options:hover>img {
   transform: scale(1.2);
 }
@@ -77,6 +78,8 @@ h2, h3 {
   transition: all 0.3s ease;
 }
 
+/* Results Section */
+
 .players {
   display: inline-flex;
   padding-left: 5px;
@@ -84,10 +87,88 @@ h2, h3 {
   align-content: space-between;
 }
 
-/* Results */
-
 .results {
   display: inline-block;
   padding: 15px;
   font-size: 2rem;
+}
+
+/* Screen Responsive Media Querries */
+
+@media (min-width: 300px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #options {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 450px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #options {
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  .heading {
+    display: flex;
+  }
+
+  #options {
+    display: flex;
+  }
+}
+
+@media (min-width: 750px) {
+  .heading {
+    display: flex;
+  }
+
+  #options {
+    display: flex;
+  }
+}
+
+@media (min-width: 900px) {
+  .heading {
+    height: 20px;
+    display: flex;
+  }
+
+  #options {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .heading {
+    height: 20px;
+  }
+  
+  .game-area {
+    max-height: 450px;
+    max-width: 830px;
+  }
+
+  #options {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+  }
+
 }
