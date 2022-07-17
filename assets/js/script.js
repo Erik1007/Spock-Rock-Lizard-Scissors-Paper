@@ -1,34 +1,52 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-  let pchoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
-  let ccoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
+let options = [
+  {
+    image: "lizard.webp",
+    name: "Lizard",
+  },
+  {
+    image: "paper.webp",
+    name: "Paper",
+  },
+  {
+    image: "rock.webp",
+    name: "Rock",
+  },
+  {
+    image: "scissor.webp",
+    name: "Scissor",
+  },
+  {
+    image: "spock.webp",
+    name: "Spock",
+  },
+];
 
   function runGame() {
-    let options = document.querySelectorAll(".pChoice");
-    let pChoice = document.getElementsByClassName("button");
+    let pChoice = getElementById("options");
+    let options = document.querySelectorAll(".options");
 
     options.forEach((option) => {
       option.addEventListener("click", function () {
-        let pChoice = this.textContent;
+        pChoice = this.textContent;
 
-        let cOptions = ["Spock", "Rock", "Lizzard","Scissors", "Paper"];
-        let cChoice = cOptions[Math.floor(Math.random() * 5)];
+        let cChoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
+        cChoice = options[Math.floor(Math.random() * 5)];
       });
     });
-  }
+  };
 
   function checkAnswer() {
-    function compareInputs(pChoice, cChoice) {
-      let currentMatch = (`${pChoice} vs ${cChoice}`);
-    }
+   let currentMatch = (`${pChoice} vs ${cChoice}`); 
 
-      // Tie check
+      // Draw check
       if (pChoice === cChoice) {
         alert(`${currentMatch} is a Draw`);
         return;
       }
-    
+      // Spock
       else if (pChoice === "Spock") {
         if (cChoice === "Scissors", "Rock") {
           alert(`${currentMatch} = You Win`);
@@ -81,13 +99,12 @@
           cScore++;
         }
       }
-  }
+  };
   
-
   function incrementScore() {
     document.getElementById("pScore").textContent = pScore;
     document.getElementById("cScore").textContent = cScore;
-  }
+  };
 
   function winner() {
     if (pScore === 4 || cScore === 4) {
@@ -99,8 +116,11 @@
       return true;
     }
     return false;
-  }
+  };
 
-  function reset() {
-
-  }
+    reset.addEventListener("click", function () {    
+      document.getElementById("reset"); {
+        pScore.innerHTML = "0";
+        cScore.innerHTML = "0";
+      }
+  });

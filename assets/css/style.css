@@ -35,7 +35,7 @@ h2, h3 {
   margin-right: auto;
 }
 
-.pChoice {
+#options {
   text-align: center;
   padding: 13px;
   border-radius: 50%;
@@ -64,15 +64,15 @@ h2, h3 {
   background-color: #ffffff;
 }
 
-.pChoice.active {
+#options.active {
   border-color: red;
 }
 
-.pChoice:hover>img {
+#options:hover>img {
   transform: scale(1.2);
 }
 
-.pChoice>img {
+#options>img {
   width: 100%;
   transition: all 0.3s ease;
 }
