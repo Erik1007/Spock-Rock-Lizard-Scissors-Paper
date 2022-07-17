@@ -24,6 +24,7 @@ let options = [
   },
 ];
 
+
   function runGame() {
     let pChoice = document.getElementsByClassName("options");
     let options = Array.from(document.getElementsByClassName("players"));
@@ -34,11 +35,16 @@ let options = [
         console.log(pChoice)
 
         let cChoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
-        cChoice = options[Math.floor(Math.random() * 5) + 1];
-        console.log(cChoice)
-      });
+        cChoice = options[Math.floor(Math.random() * 4) + 1];
+        console.log(cChoice);
+        runGame(checkAnswer);
+      }); 
+      
     });
+    
   };
+
+ 
 
   function checkAnswer() {
    let currentMatch = (`${pChoice} vs ${cChoice}`); 
@@ -50,20 +56,20 @@ let options = [
       }
       // Spock
       else if (pChoice === "Spock") {
-        if (cChoice === "Scissors", "Rock") {
+        if (cChoice === "Scissors" || "Rock") { 
           alert(`${currentMatch} = You Win`);
           pScore++;
-        } else if (cChoice === "Lizzard", "paper") {
+        } else if (cChoice === "Lizzard" || "paper") {
           alert(`${currentMatch} = Computer Wins`);
           cScore++;
         }
       }
       // Rock
       else if (pChoice === "Rock") {
-        if (cChoice === "Lizzard", "Scissors") {
+        if (cChoice === "Lizzard" || "Scissors") {
           alert (`${currentMatch} = You Win`);
           pScore++;
-        } else if (cChoice === "Paper", "Spock") {
+        } else if (cChoice === "Paper" || "Spock") {
           alert (`${currentMatch} = Computer Wins`);
           cScore++;
         }
@@ -71,10 +77,10 @@ let options = [
 
       // Lizzard
       else if (pChoice === "Lizzard") {
-        if (cChoice === "Spock", "Paper") {
+        if (cChoice === "Spock" || "Paper") {
           alert (`${currentMatch} = You Win`);
           pScore++;
-        } else if (cChoice === "Scissors", "Rock") { 
+        } else if (cChoice === "Scissors" || "Rock") { 
           alert (`${currentMatch} = Computer Wins`);
           cScore++;
         }
@@ -82,10 +88,10 @@ let options = [
 
       // Scissors
       else if (pChoice === "Scissors") {
-        if (cChoice === "Paper", "Lizzard") {
+        if (cChoice === "Paper" || "Lizzard") {
           alert (`${currentMatch} = You Win`);
           pScore++;
-        } else if (cChoice === "Spock", "Rock") {
+        } else if (cChoice === "Spock" || "Rock") {
           alert (`${currentMatch} = Computer Wins`);
           cScore++;
         }
@@ -93,16 +99,15 @@ let options = [
 
       // Paper
       else if (pChoice === "Paper") {
-        if (cChoice === "Rock", "Spock") {
+        if (cChoice === "Rock" || "Spock") {
           alert(`${currentMatch} = You Win`);
           pScore++;
-        } else if (cChoice === "Lizzard", "Scissors") {
+        } else if (cChoice === "Lizzard" || "Scissors") {
           alert(`${currentMatch} = Computer Wins`);
           cScore++;
         }
       }
-      runGame(checkAnswer[1]);
-  };
+    };
   
   function incrementScore() {
     document.getElementById("pScore").textContent = pScore;
@@ -121,13 +126,10 @@ let options = [
     return false;
   };
 
-    reset.addEventListener("click", function () {    
+    reset.addEventListener("click", function () {  
+
       document.getElementById("reset"); {
         pScore.innerHTML = "Player = 0";
         cScore.innerHTML = "Computer = 0";
       }
-      
   });
-
-
-  
