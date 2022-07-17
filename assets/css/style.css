@@ -31,7 +31,7 @@ h2, h3 {
 /* Game area */
 
 .game-area {
-  display: flex;
+  text-align: center;
   width: 85%;
   height: auto;
   margin-left: auto;
@@ -40,14 +40,13 @@ h2, h3 {
 
 /* Buttons/Options */
 
-#options {
+.options {
   text-align: center;
   padding: 13px;
   border-radius: 50%;
   border: 5px solid;
   font-size: 2rem;
   margin: 10px 30px;
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 75px;
@@ -69,11 +68,11 @@ h2, h3 {
   background-color: #ffffff;
 }
 
-#options:hover>img {
+.options:hover>img {
   transform: scale(1.2);
 }
 
-#options>img {
+.options>img {
   width: 100%;
   transition: all 0.3s ease;
 }
@@ -96,79 +95,26 @@ h2, h3 {
 /* Screen Responsive Media Querries */
 
 @media (min-width: 300px) {
-  .heading {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #options {
-    display: flex;
-    flex-direction: column;
-  }
+  
 }
 
 @media (min-width: 450px) {
-  .heading {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #options {
-    display: flex;
-  }
+ 
 }
 
 @media (min-width: 600px) {
-  .heading {
-    display: flex;
-  }
-
-  #options {
-    display: flex;
-  }
+  
 }
 
 @media (min-width: 750px) {
-  .heading {
-    display: flex;
-  }
-
-  #options {
-    display: flex;
-  }
+  
 }
 
 @media (min-width: 900px) {
-  .heading {
-    height: 20px;
-    display: flex;
-  }
-
-  #options {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
-  }
+ 
 }
 
 @media (min-width: 1000px) {
-  .heading {
-    height: 20px;
-  }
-  
-  .game-area {
-    max-height: 450px;
-    max-width: 830px;
-  }
 
-  #options {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
-  }
 
 }

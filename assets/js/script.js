@@ -25,15 +25,17 @@ let options = [
 ];
 
   function runGame() {
-    let pChoice = getElementById("options");
-    let options = document.querySelectorAll(".options");
+    let pChoice = document.getElementsByClassName("options");
+    let options = Array.from(document.getElementsByClassName("players"));
 
     options.forEach((option) => {
       option.addEventListener("click", function () {
         pChoice = this.textContent;
+        console.log(pChoice)
 
         let cChoice = ["Spock", "Rock", "Lizzard", "Scissors", "Paper"];
-        cChoice = options[Math.floor(Math.random() * 5)];
+        cChoice = options[Math.floor(Math.random() * 5) + 1];
+        console.log(cChoice)
       });
     });
   };
@@ -99,6 +101,7 @@ let options = [
           cScore++;
         }
       }
+      runGame(checkAnswer[1]);
   };
   
   function incrementScore() {
@@ -123,4 +126,8 @@ let options = [
         pScore.innerHTML = "Player = 0";
         cScore.innerHTML = "Computer = 0";
       }
+      
   });
+
+
+  
