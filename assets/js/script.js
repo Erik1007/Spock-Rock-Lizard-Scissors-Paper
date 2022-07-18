@@ -49,6 +49,7 @@ runGame(checkAnswer);
 
 function checkAnswer() {
   let currentMatch = (`${pChoice} vs ${cChoice}`);
+  console.log("currentMatch");
 
   // Draw check
   if (pChoice === cChoice) {
@@ -60,6 +61,7 @@ function checkAnswer() {
     if (cChoice == "Scissors" || cChoice == "Rock") {
       alert(`${currentMatch} = You Win`);
       pScore++;
+      console.log("Spock");
     } else if (cChoice == "Lizzard" || cChoice == "paper") {
       alert(`${currentMatch} = Computer Wins`);
       cScore++;
@@ -71,6 +73,7 @@ function checkAnswer() {
     if (cChoice == "Lizzard" || cChoice == "Scissors") {
       alert(`${currentMatch} = You Win`);
       pScore++;
+      console.log("Rock");
     } else if (cChoice == "Paper" || cChoice == "Spock") {
       alert(`${currentMatch} = Computer Wins`);
       cScore++;
@@ -82,6 +85,7 @@ function checkAnswer() {
     if (cChoice == "Spock" || cChoice == "Paper") {
       alert(`${currentMatch} = You Win`);
       pScore++;
+      console.log("Lizzard");
     } else if (cChoice == "Scissors" || cChoice == "Rock") {
       alert(`${currentMatch} = Computer Wins`);
       cScore++;
@@ -93,6 +97,7 @@ function checkAnswer() {
     if (cChoice == "Paper" || cChoice == "Lizzard") {
       alert(`${currentMatch} = You Win`);
       pScore++;
+      console.log("Scissors");
     } else if (cChoice == "Spock" || cChoice == "Rock") {
       alert(`${currentMatch} = Computer Wins`);
       cScore++;
@@ -104,6 +109,7 @@ function checkAnswer() {
     if (cChoice == "Rock" || cChoice == "Spock") {
       alert(`${currentMatch} = You Win`);
       pScore++;
+      console.log("Paper");
     } else if (cChoice == "Lizzard" || cChoice == "Scissors") {
       alert(`${currentMatch} = Computer Wins`);
       cScore++;
@@ -123,6 +129,7 @@ function winner() {
       "You win the game! Congratulations!" :
       "Computer wins the game! Try again next time!";
     alert(winner);
+    console.log("winner");
     return true;
   }
   return false;
@@ -134,4 +141,5 @@ reset.addEventListener("click", function () {
     pScore.innerHTML = "Player = 0";
     cScore.innerHTML = "Computer = 0";
   }
+  console.log("reset");
 });
