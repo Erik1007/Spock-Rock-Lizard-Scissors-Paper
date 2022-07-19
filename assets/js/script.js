@@ -1,20 +1,28 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-let buttons = document.querySelectorAll('.options');
+document.addEventListener("DOMContentLoaded", function() {
+  let buttons = document.getElementsByTagName("button");
+  
   for (let button of buttons) {
     button.addEventListener("click", function() {
-      document.getElementsByClassName("option"); {
-        if (this.getAttribute("option") === "submit") {
-          checkAnswer();
-          alert("buttong clicked");
-        } 
-        
+        if (this.getAttribute("btn") === "data-type");
+          runGame();
+        })  
       }
-    }) 
-  };
 
-  let options = [{
+runGame("checkAnswer");
+
+function runGame() {
+  let pChoice = document.getElementsByClassName('btn').value = "";
+  
+
+}
+
+
+
+});
+  let  = [{
     image: "lizard.webp",
     name: "Lizard",
   },
