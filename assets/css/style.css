@@ -42,9 +42,10 @@ h2, h3 {
   padding-right: 5px;
   align-content: space-between;
 }
+
 /* Buttons */
 
-.btn {
+.spock, .rock, .lizzard, .scissors, .paper {
   text-align: center;
   padding: 13px;
   border-radius: 50%;
@@ -59,11 +60,11 @@ h2, h3 {
   background-color: #ffffff;
 }
 
-.btn:hover>img {
+.spock, .rock, .lizzard, .scissors, .paper :hover>img {
   transform: scale(1.2);
 }
 
-.btn>img {
+.spock, .rock, .lizzard, .scissors, .paper >img {
   width: 100%;
   transition: all 0.3s ease;
 }
@@ -112,14 +113,14 @@ h2, h3 {
     width: 80%;
   }
 
-  .options {
+  .spock, .rock, .lizzard, .scissors, .paper  {
     display: inline-flex;
   }
 }
 
 @media (min-width: 1000px) {
 
-  .options {
+  .spock, .rock, .lizzard, .scissors, .paper  {
     display: inline-flex;
   }
 }

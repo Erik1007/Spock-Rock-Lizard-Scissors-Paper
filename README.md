@@ -58,3 +58,5 @@ Code credits:
 
 5. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
 
+6. https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+

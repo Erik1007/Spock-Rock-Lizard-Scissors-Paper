@@ -1,34 +1,29 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-let pChoice = parseInt(document.getElementsByTagName("data-type").value);
-
-document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementsByTagName("button");
-  
-  for (let button of buttons) {
-    button.addEventListener("click", function() {
-        if (this.getAttribute("data-type") === "pChoice");
-        console.log("spock");
-          runGame();
-        })  
-      }
-
-runGame();
-
-
 function runGame() {
-  let cChoice = [Math.floor(Math.random() * 4) + 1] (
-        ["Spock", "Rock", "Lizzard", "Scissors", "Paper"]
-  );
+  const spockBtn = document.querySelector(".spock");
+  console.log("spock");
+  const rockBtn = document.querySelector(".rock");
+  console.log("rock");
+  const lizzardBtn = document.querySelector(".lizzard");
+  console.log("lizzard");
+  const scissorsBtn = document.querySelector(".scissors");
+  console.log("scissors");
+  const paperBtn = document.querySelector("paper");
+  console.log("paper");
+  let pChoice = [spockBtn, rockBtn, lizzardBtn, scissorsBtn, paperBtn];
+  let computerChoice = [".spock", ".rock", ".lizzard", ".scissors", ".paper"];
 
-      checkAnswer();
+  
+  button.addEventListener("click", checkAnswer())
+
+  computerChoice = Math.floor(Math.random() * 5);
+  let cChoice = cChoice[computerChoice];
+
 }
 
 function checkAnswer() {
-  let currentMatch = (`${pChoice} == ${cChoice}`);
-  console.log("match");
-
   // Draw check
   if (pChoice === cChoice) {
     alert(`${currentMatch} is a Draw`);
@@ -95,21 +90,11 @@ function checkAnswer() {
   }
 };
 
-
- reset.addEventListener("click", function () {
-
-    document.getElementById("reset"); {
-      pScore.innerHTML = "Player = 15";
-      cScore.innerHTML = "Computer = 0";
-    }
-    console.log("reset");
-  });
-});
-
 function incrementScore() {
   document.getElementById("pScore").textContent = pScore;
   document.getElementById("cScore").textContent = cScore;
 };
+
 
 function winner() {
   if (pScore === 4 || cScore === 4) {
@@ -124,27 +109,18 @@ function winner() {
   return false;
 };
 
+reset.addEventListener("click", function () {
 
-  let  = [{
-    image: "lizard.webp",
-    name: "Lizard",
-  },
-  {
-    image: "paper.webp",
-    name: "Paper",
-  },
-  {
-    image: "rock.webp",
-    name: "Rock",
-  },
-  {
-    image: "scissor.webp",
-    name: "Scissor",
-  },
-  {
-    image: "spock.webp",
-    name: "Spock",
-  },
-];      
+    document.getElementById("reset"); {
+      pScore.innerHTML = "Player = 15";
+      cScore.innerHTML = "Computer = 0";
+    }
+    console.log("reset");
+  });
+
+
+
+
+
 
  
