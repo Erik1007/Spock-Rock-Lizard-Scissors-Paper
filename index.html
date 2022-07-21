@@ -28,44 +28,33 @@
             <h2>Pick Your Hand</h2>
         </div>
         <div class="player">
-            <button data-type="Spock" class="Spock">
-                <img src="assets/images/spock.webp" alt="Spock" title="" />
-            </button>
-            <button data-type="Rock" class="Rock">
-                <img src="assets/images/rock.webp" alt="Rock" title="" />
-            </button>
-            <button data-type="Lizzard" class="Lizzard">
-                <img src="assets/images/lizzard.webp" alt="Lizzard" title="" />
-            </button>
-            <button data-type="Scissors" class="Scissors">
-                <img src="assets/images/scissors.webp" alt="scissors" title="" />
-            </button>
-            <button data-type="Paper" class="Paper">
-                <img src="assets/images/paper.webp" alt="Paper" title="" />
-            </button>
+            <button class="btn btn-lg btn-success" id="spock">Spock</button>
+            <button class="btn btn-lg btn-success" id="rock">Rock</button>
+            <button class="btn btn-lg btn-success" id="lizzard">Lizzard</button>
+            <button class="btn btn-lg btn-success" id="scissors">Scissors</button>
+            <button class="btn btn-lg btn-success" id="paper">Paper</button>
         </div>
     </div>
-    
+
+    <results class="result"></results>
     <div>
         <div>
             <h2>Computer's pick</h2>
         </div>
         <div class="cChoice"></div>
     </div>
-
-    <results class="result">
-        <div>
-            <h2>Best of 7</h2>
-        </div>
-        <div>
-            <span>
-                <h3 id="pScore" class="players">Player = 0</h3>
-            </span>
-            <span>
-                <h3 id="cScore" class="players">Computer = 0</h3>
-            </span>
-        </div>
-        <button id="reset">Reset</button>
+    <div>
+        <h2>Best of 7</h2>
+    </div>
+    <div>
+        <span>
+            <h3 id="pScore" class="players">Player = 0</h3>
+        </span>
+        <span>
+            <h3 id="cScore" class="players">Computer = 0</h3>
+        </span>
+    </div>
+    <button id="reset">Reset</button>
     </results>
 
     <script src="assets/js/script.js"></script>

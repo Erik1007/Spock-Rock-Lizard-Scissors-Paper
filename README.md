@@ -60,3 +60,8 @@ Code credits:
 
 6. https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
+7. https://stackoverflow.com/questions/36632749/using-onclick-with-multiple-buttons-with-javascript
+
+8. codepen.io/763004/pen/pPGGyP
+
+

@@ -1,7 +1,6 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-function runGame() {
   const spockBtn = document.querySelector(".spock");
   console.log("spock");
   const rockBtn = document.querySelector(".rock");
@@ -12,11 +11,21 @@ function runGame() {
   console.log("scissors");
   const paperBtn = document.querySelector("paper");
   console.log("paper");
+
+  function runGame() {
+   button.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
+    
+    for (let button of buttons) {
+      button.addEventListener("click", function() {
+        pChoice.addEventListener("click", checkAnswer())
+          });  
+    };
+  });  
   let pChoice = [spockBtn, rockBtn, lizzardBtn, scissorsBtn, paperBtn];
   let computerChoice = [".spock", ".rock", ".lizzard", ".scissors", ".paper"];
 
-  
-  button.addEventListener("click", checkAnswer())
+  pChoice.addEventListener("click", checkAnswer())
 
   computerChoice = Math.floor(Math.random() * 5);
   let cChoice = cChoice[computerChoice];
