@@ -49,10 +49,10 @@ h2, h3 {
   display: inline-block;
   text-align: center;
   padding: 10px;
-  border-radius: 30%;
+  border-radius: 20%;
   border: 3px solid;
   font-weight: 400;
-  color: #3a3a3a;
+  color: #eee;
   margin: 10px 10px;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ h2, h3 {
   cursor: pointer;
   transform: scale(1.2);
   transition: all 0.3s ease;
-  background-color: rgb(237, 38, 31);
+  background-color: green;
 }
 
 .btn-lg {
@@ -68,24 +68,23 @@ h2, h3 {
   font-size: 1.5rem;
 }
 
-.btn-success{
-  color: #ffffff;
-  background-color: darkgreen;
-}
-
 /* Results Section */
 
-.results {
+.resultBox {
   display: inline-block;
-  box-sizing: border-box;
   padding: 15px;
   margin: 10px auto;
   font-size: 2rem;
   border-radius: 25px;
   background-color: lightgray;
 }
+
+.results {
+  font-size: 1em;
+}
+
 .reset {
-  box-sizing: auto;
+  border: 1px solid #3a3a3a;
   font-weight: 400;
 }
 /* Screen Responsive Media Querries */
