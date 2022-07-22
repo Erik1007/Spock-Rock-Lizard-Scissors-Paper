@@ -32,7 +32,7 @@ function compare(comChoice) {
       cScore++;
       return "lizzard poisens Spock, you LOSE";
     }
-  } else if (playerChoice === "Rock") {
+  } else if (playerChoice === "rock") {
     if (comChoice === "paper") {
       cScore++;
       return "paper covers rock, you LOSE";
@@ -73,7 +73,6 @@ function compare(comChoice) {
     } else {
       cScore++;
       return "Spock smashes scissors, you LOSE";
-      
     }
   } else if (playerChoice === "paper") {
     if (comChoice === "rock") {
@@ -87,8 +86,7 @@ function compare(comChoice) {
       return "lizzard eats paper, you LOSE";
     } else {
       pScore++;
-      return "paper disproves Spock, you WIN!";
-      
+      return "paper disproves Spock, you WIN!"; 
     }
   }
 };
@@ -108,15 +106,24 @@ function setComChoice() {
      }
   };
 
+  function result() {  
+    compare(comChoice).innerText = 'result';
+  return "<p>User: " + playerChoice + "<br>" +
+    "Computer: " + comChoice + "</p>" + "<p>" + result + "</p>";
+  };
+  result();
 
 function incrementpScore() {
     let oldScore = parseInt(document.getElementById('pScore').innerText);
     document.getElementById('pScore').innerText = ++oldScore;
 }
+incrementpScore();
+
 function incrementcScore() {
   let oldScore = parseInt(document.getElementById('cScore').innerText);
     document.getElementById('pScore').innerText = ++oldScore;
 };
+incrementcScore();
 
 
 function winner() {
