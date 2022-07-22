@@ -11,80 +11,82 @@ function compare(comChoice) {
     return "Bazzinga! The computer also chose " + comChoice + ":" + "It's a Draw!";
   } else if (playerChoice === "spock") {
     if (comChoice === "rock") {
+      pScore++;
       return "Spock vaporizes rock, you WIN!";
-      pScore++;
     } else if (comChoice === "paper") {
+      cScore++;
       return "paer disproves Spock, you LOSE";
-      cScore++;
     } else if (comChoice === "scissors") {
-      return "Spock smashes scissors, you WIN!";
       pScore++;
+      return "Spock smashes scissors, you WIN!";   
     } else {
-      return "lizzard poisens Spock, you LOSE";
       cScore++;
+      return "lizzard poisens Spock, you LOSE";
     }
   } else if (playerChoice === "Rock") {
     if (comChoice === "paper") {
+      cScore++;
       return "paper covers rock, you LOSE";
-      cScore++;
     } else if (comChoice === "scissors") {
+      pScore++;
       return "rock crushes scissors, you WIN!";
-      pScore++;
     } else if (comChoice === "lizzard") {
-      return "rock crushes lizzard, you WIN!";
       pScore++;
+      return "rock crushes lizzard, you WIN!";
     } else {
-      return "Spock vaporizes rock, you LOSE";
       cScore++;
+      return "Spock vaporizes rock, you LOSE";
     }
   } else if (playerChoice === "lizzard") {
     if (comChoice === "rock") {
+      cScore++;
       return "rock crushes lizzard, you LOSE";
-      cScore++;
     } else if (comChoice === "paper") {
+      pScore++;
       return "lizzard eats paper, you WIN!";
-      pScore++;
     } else if (comChoice === "scissors") {
-      return "scissors decapitates lizzard, you LOSE!";
       cScore++;
+      return "scissors decapitates lizzard, you LOSE!";
     } else {
-      return "lizzard poisons Spock, you WIN!";
       pScore++;
+      return "lizzard poisons Spock, you WIN!";
     }
   } else if (playerChoice === "scissors") {
     if (comChoice === "rock") {
+      cScore++;
       return "rock smashes scissors, you LOSE";
-      cScore++;
     } else if (comChoice === "paper") {
+      pScore++;
       return "scissors cuts paper, you WIN!";
-      pScore++;
     } else if (comChoice === " lizzard") {
-      return " scissors decapitates lizzard, you WIN!";
       pScore++;
+      return " scissors decapitates lizzard, you WIN!";
     } else {
-      return "Spock smashes scissors, you LOSE";
       cScore++;
+      return "Spock smashes scissors, you LOSE";
+      
     }
   } else if (playerChoice === "paper") {
     if (comChoice === "rock") {
+      pScore++;
       return "paper covers rock, you WIN!";
-      pScore++;
     } else if (comChoice === "scissors") {
+      cScore++;
       return "scissors cuts paper, you LOSE";
-      cScore++;
     } else if (comChoice === "lizzard") {
-      return "lizzard eats paper, you LOSE";
       cScore++;
+      return "lizzard eats paper, you LOSE";
     } else {
-      return "paper disproves Spock, you WIN!";
       pScore++;
+      return "paper disproves Spock, you WIN!";
+      
     }
   }
 };
 
 function runGame() {
   button.addEventListener("DOMContentLoaded", function() {
-  document.getElementsById();
+  document.getElementsById("");
 		playerChoice = this.id;
 		comChoice = Math.floor(Math.random() * 5);
      switch (comChoice) { 
@@ -124,7 +126,7 @@ function winner() {
 reset.addEventListener("click", function () {
 
     document.getElementById("reset"); {
-      pScore.innerHTML = "Player = 15";
+      pScore.innerHTML = "Player = 0";
       cScore.innerHTML = "Computer = 0";
     }
     console.log("reset");
