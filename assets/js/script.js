@@ -3,8 +3,17 @@
 
 let playerChoice;
 let comChoice;
-let pScore;
-let cScore;
+let pScore = document.getElementById('pScore');
+let cScore = document.getElementById('cScore');
+
+const playerOptions = document.querySelectorAll('.btn');
+playerOptions.forEach(btn => {
+  btn.addEventListener("click", function (event) {
+    playerChoice = event.target.id;
+    setComChoice();
+    console.log("output of compare", compare());
+  });
+});
 
 function compare(comChoice) {
   if (playerChoice === comChoice) {
@@ -84,12 +93,8 @@ function compare(comChoice) {
   }
 };
 
-function runGame() {
-  button.addEventListener("DOMContentLoaded", function() {
-  document.getElementsById("");
-		playerChoice = this.id;
-		comChoice = Math.floor(Math.random() * 5);
-     switch (comChoice) { 
+function setComChoice() {
+		switch (Math.floor(Math.random() * 5)) {
        case 0: comChoice = "spock"; 
          break; 
        case 1: comChoice = "rock"; 
@@ -101,12 +106,16 @@ function runGame() {
        case 4: comChoice = "paper"; 
          break; 
      }
-  })
-};
+  };
 
-function incrementScore() {
-  document.getElementById("pScore").textContent = pScore;
-  document.getElementById("cScore").textContent = cScore;
+
+function incrementpScore() {
+    let oldScore = parseInt(document.getElementById('pScore').innerText);
+    document.getElementById('pScore').innerText = ++oldScore;
+}
+function incrementcScore() {
+  let oldScore = parseInt(document.getElementById('cScore').innerText);
+    document.getElementById('pScore').innerText = ++oldScore;
 };
 
 
@@ -123,11 +132,12 @@ function winner() {
   return false;
 };
 
+const resetBtn = document.getElementById("reset");
 reset.addEventListener("click", function () {
 
     document.getElementById("reset"); {
-      pScore.innerHTML = "Player = 0";
-      cScore.innerHTML = "Computer = 0";
+      pScore.innerHTML = "15";
+      cScore.innerHTML = "0";
     }
     console.log("reset");
   });
