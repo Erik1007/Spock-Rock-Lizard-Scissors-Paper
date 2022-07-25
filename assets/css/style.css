@@ -68,10 +68,10 @@ h2, h3 {
 .resultBox {
   display: inline-block;
   padding: 15px;
-  margin: 10px auto;
+  min-width: 350px;
   font-size: 2rem;
   border-radius: 25px;
-  background-color: #eee;
+  background-color: rgb(241, 237, 237);
 }
 
 .results {
@@ -81,7 +81,7 @@ h2, h3 {
 .reset {
   border: 1px solid #3a3a3a;
   font-weight: 400;
-  background-color: lightgreen;
+  background-color: blue;
 }
 
 #result_display{
