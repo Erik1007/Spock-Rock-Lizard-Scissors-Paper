@@ -3,8 +3,8 @@
 
 let playerChoice;
 let comChoice;
-let pScore = document.getElementById('pScore');
-let cScore = document.getElementById('cScore');
+let pScore = 0;
+let cScore = 0;
 
 const playerOptions = document.querySelectorAll('.btn');
 playerOptions.forEach(btn => {
@@ -12,8 +12,9 @@ playerOptions.forEach(btn => {
     playerChoice = event.target.id;
     setComChoice();
     console.log("output of compare", compare());
+    document.getElementById("result_display").innerHTML = "output of compare " + compare();
   });
-});
+})
 
 function compare(comChoice) {
   if (playerChoice === comChoice) {
@@ -21,75 +22,85 @@ function compare(comChoice) {
   } else if (playerChoice === "spock") {
     if (comChoice === "rock") {
       pScore++;
-      return "Spock vaporizes rock, you WIN!";
+      incrementpScore();
+      return "Spock vaporizes rock, you <b><b>WIN!</b></b>";
     } else if (comChoice === "paper") {
-      cScore++;
-      return "paer disproves Spock, you LOSE";
+      cScore++;incrementcScore();
+      return "paer disproves Spock, you <b>LOSE</b>";
     } else if (comChoice === "scissors") {
       pScore++;
-      return "Spock smashes scissors, you WIN!";   
+      incrementpScore();
+      return "Spock smashes scissors, you <b><b>WIN!</b></b>!";   
     } else {
-      cScore++;
-      return "lizzard poisens Spock, you LOSE";
+      cScore++;incrementcScore();
+      return "lizzard poisens Spock, you <b>LOSE</b>";
     }
   } else if (playerChoice === "rock") {
     if (comChoice === "paper") {
-      cScore++;
-      return "paper covers rock, you LOSE";
+      cScore++;incrementcScore();
+      return "paper covers rock, you <b>LOSE</b>";
     } else if (comChoice === "scissors") {
       pScore++;
-      return "rock crushes scissors, you WIN!";
+      incrementpScore();
+      return "rock crushes scissors, you <b>WIN!</b>";
     } else if (comChoice === "lizzard") {
       pScore++;
-      return "rock crushes lizzard, you WIN!";
+      incrementpScore();
+      return "rock crushes lizzard, you <b>WIN!</b>";
     } else {
-      cScore++;
-      return "Spock vaporizes rock, you LOSE";
+      cScore++;incrementcScore();
+      return "Spock vaporizes rock, you <b>LOSE</b>";
     }
   } else if (playerChoice === "lizzard") {
     if (comChoice === "rock") {
-      cScore++;
-      return "rock crushes lizzard, you LOSE";
+      cScore++;incrementcScore();
+      return "rock crushes lizzard, you <b>LOSE</b>";
     } else if (comChoice === "paper") {
       pScore++;
-      return "lizzard eats paper, you WIN!";
+      incrementpScore();
+      return "lizzard eats paper, you <b>WIN!</b>";
     } else if (comChoice === "scissors") {
-      cScore++;
-      return "scissors decapitates lizzard, you LOSE!";
+      cScore++;incrementcScore();
+      return "scissors decapitates lizzard, you <b>LOSE</b>";
     } else {
       pScore++;
-      return "lizzard poisons Spock, you WIN!";
+      incrementpScore();
+      return "lizzard poisons Spock, you <b>WIN!</b>";
     }
   } else if (playerChoice === "scissors") {
     if (comChoice === "rock") {
-      cScore++;
-      return "rock smashes scissors, you LOSE";
+      cScore++;incrementcScore();
+      return "rock smashes scissors, you <b>LOSE</b>";
     } else if (comChoice === "paper") {
       pScore++;
-      return "scissors cuts paper, you WIN!";
+      incrementpScore();
+      return "scissors cuts paper, you <b>WIN!</b>";
     } else if (comChoice === " lizzard") {
       pScore++;
-      return " scissors decapitates lizzard, you WIN!";
+      incrementpScore();
+      return " scissors decapitates lizzard, you <b>WIN!</b>";
     } else {
-      cScore++;
-      return "Spock smashes scissors, you LOSE";
+      cScore++;incrementcScore();
+      return "Spock smashes scissors, you <b>LOSE</b>";
     }
   } else if (playerChoice === "paper") {
     if (comChoice === "rock") {
       pScore++;
-      return "paper covers rock, you WIN!";
+      incrementpScore();
+      return "paper covers rock, you <b><b>WIN!</b></b>";
     } else if (comChoice === "scissors") {
-      cScore++;
-      return "scissors cuts paper, you LOSE";
+      cScore++;incrementcScore();
+      return "scissors cuts paper, you <b>LOSE</b>";
     } else if (comChoice === "lizzard") {
-      cScore++;
-      return "lizzard eats paper, you LOSE";
+      cScore++;incrementcScore();
+      return "lizzard eats paper, you <b>LOSE</b>";
     } else {
       pScore++;
-      return "paper disproves Spock, you WIN!"; 
+      incrementpScore();
+      return "paper disproves Spock, you <b><b>WIN!</b></b>"; 
     }
   }
-};
+}
 
 function setComChoice() {
 		switch (Math.floor(Math.random() * 5)) {
@@ -104,27 +115,24 @@ function setComChoice() {
        case 4: comChoice = "paper"; 
          break; 
      }
-  };
+  }
 
-  function result() {  
-    compare(comChoice).innerText = 'result';
-  return "<p>User: " + playerChoice + "<br>" +
+  compare();
+
+  function result (compare, comChoice) { 
+  return "<p>Player: " + playerChoice + "<br>" +
     "Computer: " + comChoice + "</p>" + "<p>" + result + "</p>";
-  };
-  result();
-
+  }
+ 
 function incrementpScore() {
-    let oldScore = parseInt(document.getElementById('pScore').innerText);
+    let oldScore = pScore;
     document.getElementById('pScore').innerText = ++oldScore;
 }
-incrementpScore();
 
 function incrementcScore() {
-  let oldScore = parseInt(document.getElementById('cScore').innerText);
-    document.getElementById('pScore').innerText = ++oldScore;
-};
-incrementcScore();
-
+  let oldScore = cScore;
+    document.getElementById('cScore').innerText = ++oldScore;
+}
 
 function winner() {
   if (pScore === 4 || cScore === 4) {
@@ -137,21 +145,24 @@ function winner() {
     return true;
   }
   return false;
-};
+}
 
-const resetBtn = document.getElementById("reset");
-reset.addEventListener("click", function () {
 
-    document.getElementById("reset"); {
-      pScore.innerHTML = "15";
-      cScore.innerHTML = "0";
-    }
+
+ function reset1(){
+  alert(); return;
+    console.log("Button clicked");
+  document.getElementById('pScore').innerHTML = "0";
+  document.getElementById('cScore').innerHTML = "0";
     console.log("reset");
-  });
+    pScore= 0;
+    cScore = 0;
+  }
 
-
-
-
+result();
+//incrementpScore();
+//incrementcScore();
+winner();
 
 
  
