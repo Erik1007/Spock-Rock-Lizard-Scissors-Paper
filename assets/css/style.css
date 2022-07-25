@@ -71,7 +71,7 @@ h2, h3 {
   margin: 10px auto;
   font-size: 2rem;
   border-radius: 25px;
-  background-color: lightgray;
+  background-color: #eee;
 }
 
 .results {
@@ -81,10 +81,11 @@ h2, h3 {
 .reset {
   border: 1px solid #3a3a3a;
   font-weight: 400;
+  background-color: lightgreen;
 }
 
 #result_display{
-  font-size:16px;
+  font-size:20px;
 }
 /* Screen Responsive Media Querries */
 
