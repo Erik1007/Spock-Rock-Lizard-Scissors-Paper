@@ -15,7 +15,7 @@ playerOptions.forEach(btn => {
     setComChoice();
     document.getElementById("result_display").innerHTML = compare();
   });
-})
+});
 
 // The logic statements for the comparrison of players choices, including calling the score increment function: 
 function compare() {
@@ -122,14 +122,14 @@ function setComChoice() {
  
   // The incremental player score function:
 function incrementpScore() {
-    document.getElementById('pScore').innerText = ++pScore
-    victory()
+    document.getElementById('pScore').innerText = ++pScore;
+    victory();
 }
 
 // The incremental computer score function:
 function incrementcScore() {
     document.getElementById('cScore').innerText = ++cScore; 
-    victory()
+    victory();
 }
 
 // The reset function after a 'player' has won the series:

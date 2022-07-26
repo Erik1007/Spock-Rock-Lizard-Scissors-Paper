@@ -64,4 +64,8 @@ Code credits:
 
 8. codepen.io/763004/pen/pPGGyP
 
+9. https://www.w3schools.com/js/js_functions.asp
+
+10. https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
+
 

@@ -20,6 +20,8 @@ body {
 
 .heading-img {
   display: flex;
+  height: 300px;
+  width: 300px;
 }
 
 h2, h3 {
@@ -71,7 +73,7 @@ h2, h3 {
   min-width: 350px;
   font-size: 2rem;
   border-radius: 25px;
-  background-color: rgb(252, 245, 245);
+  background-color: rgb(245, 252, 249);
 }
 
 .results {
