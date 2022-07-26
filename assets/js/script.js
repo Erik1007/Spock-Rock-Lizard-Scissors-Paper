@@ -6,6 +6,8 @@ let comChoice;
 let pScore = 0;
 let cScore = 0;
 
+
+// The function for the players choice buttons: 
 const playerOptions = document.querySelectorAll('.btn');
 playerOptions.forEach(btn => {
   btn.addEventListener("click", function (event) {
@@ -15,6 +17,7 @@ playerOptions.forEach(btn => {
   });
 })
 
+// The logic statements for the comparrison of players choices, including calling the score increment function: 
 function compare() {
   if (playerChoice === comChoice) {
     return "Bazzinga! The computer also chose " + comChoice + ":" + "It's a Draw!";
@@ -89,8 +92,10 @@ function compare() {
       return "paper disproves Spock, you WIN!"; 
     }
   }
+ 
 }
 
+//The random computer choice selection function:
 function setComChoice() {
 		switch (Math.floor(Math.random() * 5)) {
        case 0: comChoice = "spock"; 
@@ -109,38 +114,45 @@ function setComChoice() {
 
   compare();
 
+  // The player choice vs random computer choice result display statement:
   function result () { 
   return "<p>Player: " + playerChoice + "<br>" +
     "Computer: " + comChoice + "</p>" + "<p>" + result + "</p>";
   }
  
+  // The incremental player score function:
 function incrementpScore() {
-    document.getElementById('pScore').innerText = ++pScore;
+    document.getElementById('pScore').innerText = ++pScore
+    victory()
 }
 
+// The incremental computer score function:
 function incrementcScore() {
-    document.getElementById('cScore').innerText = ++cScore;
+    document.getElementById('cScore').innerText = ++cScore; 
+    victory()
 }
 
+// The reset function after a 'player' has won the series:
+document.getElementById("resetScore").addEventListener("click", reset);
+function reset() { 
+  pScore = 0;
+  cScore = 0;
+  document.getElementById("pScore").textContent = pScore;
+  document.getElementById("cScore").textContent = cScore;
+}
+
+// The victory threshold function to restart the game:
 function victory() {
-  if ('.pScore' === 5);
-  alert("Congrats! You have bested Sheldon!");
-  reset();
-  if ('.cScore' === 5);
-  alert("Bazinga! You lost to a superior being");
-  reset();   
+  if (pScore === 5) {
+    alert("Congrats! You have bested Sheldon!");
+    reset(); 
   }
+  if (cScore === 5){
+    alert("Bazinga! You lost to a superior being");
+    reset(); 
+  }
+}
 
-
- function reset() {
-  btn.addEventListener("click", function () {
-  document.getElementById("resetScore"); {
-    document.getElementsByClassName('.pScore').innerText = "0";
-    document.getElementsByClassName('.cScore').innerText = "0";
-    }}
-  )}
-
-reset();
 result();
 
 
