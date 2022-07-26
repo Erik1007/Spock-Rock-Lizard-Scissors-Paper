@@ -19,8 +19,7 @@ function compare() {
   if (playerChoice === comChoice) {
     return "Bazzinga! The computer also chose " + comChoice + ":" + "It's a Draw!";
   } else if (playerChoice === "spock") {
-    if (comChoice === "rock") {
-      
+    if (comChoice === "rock") {   
       incrementpScore();
       return "Spock vaporizes rock, you WIN!";
     } else if (comChoice === "paper") {
@@ -105,7 +104,7 @@ function setComChoice() {
        case 4: comChoice = "paper"; 
          break; 
      }
-     console.log('see', comChoice);
+     console.log(playerChoice, comChoice);
   }
 
   compare();
@@ -123,31 +122,27 @@ function incrementcScore() {
     document.getElementById('cScore').innerText = ++cScore;
 }
 
-function winner() {
-  if (pScore === 4 || cScore === 4) {
-    let winner =
-      pScore === 4 ?
-      "You win the game! Congratulations!" :
-      "Computer wins the game! Try again next time!";
-    alert(winner);
-    console.log("winner");
-    return true;
+function victory() {
+  if ('.pScore' === 5);
+  alert("Congrats! You have bested Sheldon!");
+  reset();
+  if ('.cScore' === 5);
+  alert("Bazinga! You lost to a superior being");
+  reset();   
   }
-  return false;
-}
+
 
  function reset() {
-  btn.addEventListener("click");
-  document.getElementById('pScore').innerHTML = "0";
-  document.getElementById('cScore').innerHTML = "0";
-    console.log("reset");
-    pScore= 0;
-    cScore = 0;
-  }
+  btn.addEventListener("click", function () {
+  document.getElementById("resetScore"); {
+    document.getElementsByClassName('.pScore').innerText = "0";
+    document.getElementsByClassName('.cScore').innerText = "0";
+    }}
+  )}
 
-
+reset();
 result();
-winner();
+
 
 
  

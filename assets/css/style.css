@@ -60,7 +60,7 @@ h2, h3 {
   cursor: pointer;
   transform: scale(1.2);
   transition: all 0.3s ease;
-  background-color: green;
+  background-color: rgb(23, 156, 23);
 }
 
 /* Results Section */
@@ -71,17 +71,21 @@ h2, h3 {
   min-width: 350px;
   font-size: 2rem;
   border-radius: 25px;
-  background-color: rgb(241, 237, 237);
+  background-color: rgb(252, 245, 245);
 }
 
 .results {
   font-size: 1em;
 }
 
-.reset {
+.btn-reset {
   border: 1px solid #3a3a3a;
   font-weight: 400;
-  background-color: blue;
+  font-size: 20px;
+  background-color: rgb(127, 199, 220);
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 #result_display{
