@@ -1,8 +1,8 @@
 Spock - Rock - Lizzard - Scissors - Paper is a fun game site that has been created to help kids (and anyone else that like the show "The Big Bang Theory") have a little fun and pass the time. The game is a modern twist (based off of the charechter Sheldon Coopers's concept) of the original Rochambeau game better known as the folk game rock-paper-scissors. The twist is adding two more hand shape possibilities in an effort to statistically reduce the possabilities of the players choosing the same hand shape resulting in a draw. This program is set to be a "Best of 7" series so the player/computer has to win 4 games to win the series.
 
-The game in itself is fairly simple and takes little skill to play as each round (especially when played against a computer) is won more on luck than anything else. There for its the perfect game to entertain children and occasionally, fans of the show. 
+The game in itself is fairly simple and takes minimal skill to play as each round (especially when played against a computer) as it is more a game of chance than skill. Therefore its the perfect game to entertain children and occasionally, fans of the show. The value of this game is focused on its ease of use, its accessability and that it is fun and entertaining.
 
-features of site: The site feateures one main page that is completely responsive to fit on to any screen size. On the main page there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player has to do is pick which hand shape they think will win against the computer.
+Features of site: The site feateures one main page that is completely responsive to fit on to any screen size. On the main page there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player has to do is pick which hand shape they think will win against the computer.
 
 Directly below the 5 "Player Choice buttons" is the presentation area fo rthe computers randomly chosen hand shape. The program then states who wins and near the botoom of the page there is a score counter for the player and the computer. The first competitor to gain four victories wins the series. At the bottom of the page there is a reset button to start the series all over again.
 
@@ -48,9 +48,9 @@ Media Credits:
 
 Code credits:
 
-1. Code Institutes "Love Maths" was used as the main source of inspiration for the main page set up, button setting, css styling, and JS coding (run game funciton, incremental scoring, game area arguements, event listeners and reset function. 
+1. I heavily used the Code Institutes "Love Maths" project example as the main source of inspiration for the main page set up, button setting, css styling, and JS coding (run game funciton, incremental scoring, game area arguements, event listeners and reset function. 
 
-2. Code Institutes "Love Running" was used for some css styling assistance as well as for assistance with hover styling and media querries.
+2. Code Institutes "Love Running" was used for some css styling assistance as well as for assistance with hover styling and media querries. I referenced my previous project "Bombers Baseball" for assistance with the nav bar links and footer links. I also cross referenced the Code Institute projects "Love Running" and "Love Maths" for styling attributes
 
 3. Learners Bucket.com/tutorials used for code/inspiration and assistance with Javascript code for the game area arguements, the incremental scoring, event listeners and reset function: (https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
 
@@ -65,12 +65,13 @@ https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 7. This page in Stack Overflow was heavily used to help debug the players choice buttons and to get them to work with the compare and increment funcitons: 
 https://stackoverflow.com/questions/36632749/using-onclick-with-multiple-buttons-with-javascript
 
-8. codepen.io/763004/pen/pPGGyP
+8. This page: codepen.io/763004/pen/pPGGyP was extensivly used as refference, inspiration and guidance for the javascript 'if -else' compare function as well as the computer choice function. I did use lines of code directly/indirectly from this page for the compare and comuter choice funcitons. This page became a 'reference point' of functionality during the process of working on my project. 
 
 9. This page from w3schools was heavily used to help debug the vicotry and reset functions as well as and to get them to work with the compare and increment funcitons: 
 https://www.w3schools.com/js/js_functions.asp
 
-10. his page from freecodecamp was heavily used to help debug the issues I was experienceing with event listeners on all functions:
+10. This page from freecodecamp was heavily used to help debug the issues I was experienceing with event listeners on all functions:
  https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
+
 
 

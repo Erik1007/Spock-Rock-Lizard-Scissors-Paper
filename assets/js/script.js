@@ -17,6 +17,7 @@ playerOptions.forEach(btn => {
   });
 });
 
+// Some lines in the following code were directly inspired by/borrowed from: https://codepen.io/763004/pen/pPGGyP
 // The logic statements for the comparrison of players choices, including calling the score increment function: 
 function compare() {
   if (playerChoice === comChoice) {
@@ -95,6 +96,7 @@ function compare() {
  
 }
 
+// Some lines in the following code were directly inspired by/borrowed from: https://codepen.io/763004/pen/pPGGyP
 //The random computer choice selection function:
 function setComChoice() {
 		switch (Math.floor(Math.random() * 5)) {
@@ -115,18 +117,21 @@ function setComChoice() {
   compare();
 
   // The player choice vs random computer choice result display statement:
+  // This code was inspired by the website:  https://codepen.io/763004/pen/pPGGyP
   function result () { 
   return "<p>Player: " + playerChoice + "<br>" +
     "Computer: " + comChoice + "</p>" + "<p>" + result + "</p>";
   }
  
   // The incremental player score function:
+  // This code was inspired by the Code Institutes 'Love Maths'
 function incrementpScore() {
     document.getElementById('pScore').innerText = ++pScore;
     victory();
 }
 
 // The incremental computer score function:
+// This code was inspired by the Code Institutes 'Love Maths'
 function incrementcScore() {
     document.getElementById('cScore').innerText = ++cScore; 
     victory();

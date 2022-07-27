@@ -12,7 +12,7 @@ body {
 }
 
 /* Navigation bar */
-
+/* This code was inspired by the Code Institutes 'Love Running' */
 .nav-list {
   margin: 0px;
   padding: 1rem;
@@ -23,18 +23,21 @@ body {
   position: relative;
 }
 
+/* This code was inspired by the Code Institutes 'Love Running' */
 .nav-item {
   justify-content: space-between;
   padding: 1rem;
   font-size: 20px;
   font-weight: 400;
+  color: #3a3a3a;
 }
 
+/* This code was inspired by the Code Institutes 'Love Running' */
 .nav-item a:hover,
 .nav-item a:active {
   border-bottom: 2px solid #3a3a3a;
   background-color: rgb(248, 76, 76);
-    color: white;
+  color: white;
 }
 
 /* Heading */
@@ -44,13 +47,8 @@ body {
   font-size: 2rem;
 }
 
-.heading-img {
-  display: flex;
-  height: 300px;
-  width: 300px;
-}
-
-h2, h3 {
+h2,
+h3 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -72,7 +70,7 @@ h2, h3 {
 }
 
 /* Buttons */
-
+/* This code was inspired by the Code Institutes 'Love Maths' */
 .btn {
   display: inline-block;
   text-align: center;
@@ -91,10 +89,11 @@ h2, h3 {
   background-color: rgb(240, 58, 58);
 }
 
+/* This code was inspired by the Code Institutes 'Love Maths' */
 .btn:active,
 .btn:hover {
-    background-color: darkblue;
-    color: white;
+  background-color: darkblue;
+  color: white;
 }
 
 /* Results Section */
@@ -112,6 +111,10 @@ h2, h3 {
   font-size: 1em;
 }
 
+#result_display {
+  font-size: 20px;
+}
+
 .btn-reset {
   border: 1px solid #3a3a3a;
   font-weight: 400;
@@ -122,18 +125,15 @@ h2, h3 {
   transition: all 0.3s ease;
 }
 
+/* This code was inspired by the Code Institutes 'Love Maths' */ 
 .btn-reset:active,
 .btn-reset:hover {
-    background-color: rgb(53, 209, 17);
-    color: white;
-}
-
-#result_display{
-  font-size:20px;
+  background-color: rgb(53, 209, 17);
+  color: white;
 }
 
 /* Footer */
-
+/* This code was inspired by the Code Institutes 'Love Running' */
 .footer {
   display: inline-flex;
   align-items: center;
@@ -144,49 +144,60 @@ h2, h3 {
   text-decoration: none;
 }
 
+/* This code was inspired by the Code Institutes 'Love Running' */
 .footer-item a {
   font-size: 30px;
   font-weight: 400;
+  padding: 1rem;
 }
 
+/* This code was inspired by the Code Institutes 'Love Running' */
 .footer-item a:active,
 .footer-item a:hover {
-    background-color: rgb(248, 76, 76);
-    color: white;
+  background-color: rgb(248, 76, 76);
+  color: white;
 }
+
 /* Screen Responsive Media Querries */
+/* This code was inspired by the Code Institutes 'Love Running' */
+@media (max-width: 400px) {
+  .footer {
+    flex-direction: column;
+  }
 
-@media (min-width: 300px) {
-  
+  .footer-item {
+    padding: 1rem;
+  }
 }
 
-@media (min-width: 450px) {
- 
-}
-
-@media (min-width: 600px) {
-  
-}
-
-@media (min-width: 750px) {
-  
+@media (min-width: 400px) {
+  .footer {
+    display: inline-flex;
+  }
 }
 
 @media (min-width: 900px) {
- 
+
   body {
     width: 80%;
   }
 
-  .spock, .rock, .lizzard, .scissors, .paper  {
+  .spock,
+  .rock,
+  .lizzard,
+  .scissors,
+  .paper {
     display: inline-flex;
   }
 }
 
 @media (min-width: 1000px) {
 
-  .spock, .rock, .lizzard, .scissors, .paper  {
+  .spock,
+  .rock,
+  .lizzard,
+  .scissors,
+  .paper {
     display: inline-flex;
   }
 }
-
