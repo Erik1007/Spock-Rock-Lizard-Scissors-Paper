@@ -11,6 +11,32 @@ body {
   margin: 0 auto;
 }
 
+/* Navigation bar */
+
+.nav-list {
+  margin: 0px;
+  padding: 1rem;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-item {
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  border-bottom: 2px solid #3a3a3a;
+  background-color: rgb(248, 76, 76);
+    color: white;
+}
+
 /* Heading */
 
 .heading {
@@ -104,6 +130,29 @@ h2, h3 {
 
 #result_display{
   font-size:20px;
+}
+
+/* Footer */
+
+.footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  width: 85%;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer-item a {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.footer-item a:active,
+.footer-item a:hover {
+    background-color: rgb(248, 76, 76);
+    color: white;
 }
 /* Screen Responsive Media Querries */
 
