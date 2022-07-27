@@ -141,7 +141,7 @@ function reset() {
   document.getElementById("cScore").textContent = cScore;
 }
 
-// The victory threshold function to restart the game:
+// The victory threshold function to reset the game:
 function victory() {
   if (pScore === 5) {
     alert("Congrats! You have bested Sheldon!");

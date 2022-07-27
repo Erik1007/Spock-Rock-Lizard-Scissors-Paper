@@ -50,22 +50,27 @@ Code credits:
 
 1. Code Institutes "Love Maths" was used as the main source of inspiration for the main page set up, button setting, css styling, and JS coding (run game funciton, incremental scoring, game area arguements, event listeners and reset function. 
 
-2. Code Institutes "Love Running" was used for some styling assistance.
+2. Code Institutes "Love Running" was used for some css styling assistance as well as for assistance with hover styling and media querries.
 
 3. Learners Bucket.com/tutorials used for code/inspiration and assistance with Javascript code for the game area arguements, the incremental scoring, event listeners and reset function: (https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
 
 4. Sebhastian.com/rock-paper-scissors-javascript used for inspiration and assistance with Javascript code for the game area arguements, the incremental scoring, event listeners and reset function: https://sebhastian.com/rock-paper-scissors-javascript/
 
-5. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
+5. This page was used for assistance/guidance for the compare function arguements:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
 
-6. https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+6. Geeks for Geeks was used for code/inspiration and assistance with Javascript code for the compare funciton, the incremental scoring functions, event listeners and reset function:
+https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
-7. https://stackoverflow.com/questions/36632749/using-onclick-with-multiple-buttons-with-javascript
+7. This page in Stack Overflow was heavily used to help debug the players choice buttons and to get them to work with the compare and increment funcitons: 
+https://stackoverflow.com/questions/36632749/using-onclick-with-multiple-buttons-with-javascript
 
 8. codepen.io/763004/pen/pPGGyP
 
-9. https://www.w3schools.com/js/js_functions.asp
+9. This page from w3schools was heavily used to help debug the vicotry and reset functions as well as and to get them to work with the compare and increment funcitons: 
+https://www.w3schools.com/js/js_functions.asp
 
-10. https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
+10. his page from freecodecamp was heavily used to help debug the issues I was experienceing with event listeners on all functions:
+ https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
 
 

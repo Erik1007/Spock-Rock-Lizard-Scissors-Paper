@@ -1,5 +1,5 @@
 body {
-  background-image: url(/assets/images/background1.jpg);
+  background-image: url(/assets/images/bGround.webp);
   font-family: "Roboto", sans-serif;
   color: #3a3a3a;
   display: flex;
@@ -52,7 +52,7 @@ h2, h3 {
   text-align: center;
   padding: 10px;
   border-radius: 20%;
-  border: 3px solid;
+  border: 3px solid black;
   font-weight: 400;
   color: #eee;
   margin: 10px 10px;
@@ -62,7 +62,13 @@ h2, h3 {
   cursor: pointer;
   transform: scale(1.2);
   transition: all 0.3s ease;
-  background-color: rgb(23, 156, 23);
+  background-color: rgb(240, 58, 58);
+}
+
+.btn:active,
+.btn:hover {
+    background-color: darkblue;
+    color: white;
 }
 
 /* Results Section */
@@ -70,10 +76,10 @@ h2, h3 {
 .resultBox {
   display: inline-block;
   padding: 15px;
-  min-width: 350px;
-  font-size: 2rem;
+  min-width: 200px;
+  font-size: 1.5rem;
   border-radius: 25px;
-  background-color: rgb(245, 252, 249);
+  background-color: rgb(240, 243, 242);
 }
 
 .results {
@@ -88,6 +94,12 @@ h2, h3 {
   cursor: pointer;
   transform: scale(1.2);
   transition: all 0.3s ease;
+}
+
+.btn-reset:active,
+.btn-reset:hover {
+    background-color: rgb(53, 209, 17);
+    color: white;
 }
 
 #result_display{
