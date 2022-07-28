@@ -6,6 +6,10 @@ let comChoice;
 let pScore = 0;
 let cScore = 0;
 
+window.onload = function () {
+  inactiveTime();
+}
+
 
 // The function for the players choice buttons: 
 const playerOptions = document.querySelectorAll('.btn');
@@ -144,6 +148,9 @@ function reset() {
   cScore = 0;
   document.getElementById("pScore").textContent = pScore;
   document.getElementById("cScore").textContent = cScore;
+  result(playerChoice = "",comChoice = "");
+ 
+  
 }
 
 // The victory threshold function to reset the game:
@@ -159,6 +166,25 @@ function victory() {
 }
 
 result();
+
+// Idle time out function for empty input and player inactivity
+// This code was inspired by/borrowed from: stackoverflow.com/how-to-detect-idle-time-in-javascript
+var inactiveTime = function () {
+  var time;
+  window.onload = resetTimer;
+  document.onmousemove = resetTimer;
+  document.onclick = resetTimer;
+  document.onkeydown = resetTimer;
+
+  function inactive () {
+    alert("Youre not playing? Scared of Sheldon? Press a button to play!")
+  }
+
+  function resetTimer() {
+    clearTimeout(time);
+    time = setTimeout(inactive, 60000)
+  }
+}
 
 
 

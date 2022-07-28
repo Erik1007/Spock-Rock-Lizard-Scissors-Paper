@@ -73,5 +73,5 @@ https://www.w3schools.com/js/js_functions.asp
 10. This page from freecodecamp was heavily used to help debug the issues I was experienceing with event listeners on all functions:
  https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
 
-
+11.  https://www.stackoverflow.com/questions/66755/how-to-detect-idle-time-in-javascript was used as inspiration for/borrowed code from to create an idle timer of inactivity to pronpt the player to interact with the game with valid input.
 
