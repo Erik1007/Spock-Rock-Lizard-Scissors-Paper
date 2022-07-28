@@ -8,7 +8,7 @@ let cScore = 0;
 
 window.onload = function () {
   inactiveTime();
-}
+};
 
 
 // The function for the players choice buttons: 
@@ -177,14 +177,14 @@ var inactiveTime = function () {
   document.onkeydown = resetTimer;
 
   function inactive () {
-    alert("Youre not playing? Scared of Sheldon? Press a button to play!")
+    alert("Youre not playing? Scared of Sheldon? Press a button to play!");
   }
 
   function resetTimer() {
     clearTimeout(time);
-    time = setTimeout(inactive, 60000)
+    time = setTimeout(inactive, 60000);
   }
-}
+};
 
 
 
