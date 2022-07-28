@@ -1,26 +1,40 @@
-#** Spock - Rock - Lizzard - Scissors - Paper
+**Spock - Rock - Lizzard - Scissors - Paper 
 
 Spock - Rock - Lizzard - Scissors - Paper is a fun game site that has been created to help kids (and anyone else that like the show "The Big Bang Theory") have a little fun and pass the time. The game is a modern twist (based off of the charechter Sheldon Coopers's concept) of the original Rochambeau game better known as the folk game rock-paper-scissors. The twist is adding two more hand shape possibilities in an effort to statistically reduce the possabilities of the players choosing the same hand shape resulting in a draw. This program is set to be a "Best of 7" series so the player/computer has to win 4 games to win the series.
 
 The value of this game is focused on its ease of use, its accessability and that it is fun and entertaining. The game in itself is fairly simple and takes minimal skill to play as each round (especially when played against a computer) as it is more a game of chance than skill. Therefore its the perfect game to entertain children and occasionally, fans of the show. 
 
 
-##**Features of site: 
+**Features of site: 
 
 Although this site feateures one main page (which is completely responsive to fit on to any screen size) there are distinct areas on the page. There is a navigation bar above the Title header, there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player has to do is pick which hand shape they think will win against 'Sheldon' the computer. The results section displays how the game played out. There is a "Play Again" button to start the game over and there are links to other fun games in the footer section.
 
 
+**The Navigation Bar and Page Title:
+
+![Screenshot of the Nav bar and Title](/assets/images/nav-bar-heading.webp)
+
+In the Navigation Bar, there are three links. The "Play the Game" link is an internal link which brings the user down to the "Game area" of the page. The second link is an external link which can llow the user to navigate to a "Big Bang Theory" fan page which details the rules of the game in words: (https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=As%20Sheldon%20explains%2C%20%22Scissors%20cuts,has%2C%20rock%20crushes%20scissors.%22) The thrid and final link is an internal link that brings the user to the bottom of the page where there are 5 external links to other gaming sites.
+
+The Title of the Game is featured in the center of the page so that the user knows what game they are invited to play.
+
+![Screenshot of the Rules of the game in picture form](/assets/images/game-rules.webp)
+
+Fixed in the center of the page is a pictoral discription for the rules of the game. Arrows indicate which hand formations win or lose against other hand formations. The pictures accuratly show the hand formations that could be used if the player wanted to play the game in real life. Although the picture is detailed and descriptive for the rules of the game, there is also a link inth enavigation bar to a website what writes out the rules (if a user would rather see it in words).
 
 
 
-###**Future features to include:
+
+
+
+**Future features to include:
 
 1. In the future I would like to make it possible to have the game have a second player option so that more than one person can enjoy the game.
 
 2. Also, I think that it would be good to link this game with a series of other kid friendly games of similar skill levels, such as Tic-Tac-Toe, etc.
 
 
-##**Testing methods and results:
+**Testing methods and results:
 
 1. Using [w3](https://validator.w3.org/), each page was tested repeatedly to track and debug errors in the code, until all errors were eliminated in all pages of the code.
 
@@ -33,11 +47,11 @@ Although this site feateures one main page (which is completely responsive to fi
 
 
 
-##**Unfixed bugs:
+**Unfixed bugs:
 
 
 
-##**Deployment:
+**Deployment:
 
 The site was built and deployed to [GitHub pages](https://pages.github.com/). The steps to deploy are as follows:
 
@@ -49,11 +63,11 @@ Once the master branch has been selected, the page will be automatically refresh
 
 
 
-##**Media Credits:
+**Media Credits:
 
 1. Hero image came from Tony Florida.com "Rock paper scissors lizzard spock rules"
 
-##**Code credits:
+**Code credits:
 
 1. I heavily used the Code Institutes "Love Maths" project example as the main source of inspiration for the main page set up, button setting, css styling, and JS coding (run game funciton, incremental scoring, game area arguements, event listeners and reset function. 
 
