@@ -100,11 +100,13 @@ Multiple attempts were made to develop a function that took in the players choic
 
 3.  There were significant issues surrounding the reset function that ends the game when a player reaches a certain threshold as well as clearing the scoreboard and results area. 
 
+4. The Favicons link created error codes in the console log that took some time debugging, but in the end, those errors were eliminated.
+
 
 
 **Unfixed bugs:**
 
-As of now, there is only one "glitch", when the game resets, the results area does not clen out and the results of the last game are still present. It does not affect the game and there are no error codes thrown, I would just prefer that the results section clear out to an empty field to start fresh. 
+As far as I am aware as of now, there are no unfixed bugs that prevent the site or the game from functioning as normal. That is not to say that there are not any bugs, it is just to say that I have fixed every bug that I am aware of.
 
 
 **Deployment:**

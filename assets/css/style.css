@@ -125,7 +125,7 @@ h3 {
   transition: all 0.3s ease;
 }
 
-/* This code was inspired by the Code Institutes 'Love Maths' */ 
+/* This code was inspired by the Code Institutes 'Love Maths' */
 .btn-reset:active,
 .btn-reset:hover {
   background-color: rgb(53, 209, 17);
