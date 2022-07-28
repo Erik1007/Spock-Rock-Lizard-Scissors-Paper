@@ -148,7 +148,7 @@ function reset() {
   cScore = 0;
   document.getElementById("pScore").textContent = pScore;
   document.getElementById("cScore").textContent = cScore;
-  result(playerChoice = "",comChoice = "");
+  result(playerChoice === "",comChoice === "");
  
   
 }

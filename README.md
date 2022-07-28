@@ -1,38 +1,45 @@
+#** Spock - Rock - Lizzard - Scissors - Paper
+
 Spock - Rock - Lizzard - Scissors - Paper is a fun game site that has been created to help kids (and anyone else that like the show "The Big Bang Theory") have a little fun and pass the time. The game is a modern twist (based off of the charechter Sheldon Coopers's concept) of the original Rochambeau game better known as the folk game rock-paper-scissors. The twist is adding two more hand shape possibilities in an effort to statistically reduce the possabilities of the players choosing the same hand shape resulting in a draw. This program is set to be a "Best of 7" series so the player/computer has to win 4 games to win the series.
 
-The game in itself is fairly simple and takes minimal skill to play as each round (especially when played against a computer) as it is more a game of chance than skill. Therefore its the perfect game to entertain children and occasionally, fans of the show. The value of this game is focused on its ease of use, its accessability and that it is fun and entertaining.
-
-Features of site: The site feateures one main page that is completely responsive to fit on to any screen size. On the main page there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player has to do is pick which hand shape they think will win against the computer.
-
-Directly below the 5 "Player Choice buttons" is the presentation area fo rthe computers randomly chosen hand shape. The program then states who wins and near the botoom of the page there is a score counter for the player and the computer. The first competitor to gain four victories wins the series. At the bottom of the page there is a reset button to start the series all over again.
+The value of this game is focused on its ease of use, its accessability and that it is fun and entertaining. The game in itself is fairly simple and takes minimal skill to play as each round (especially when played against a computer) as it is more a game of chance than skill. Therefore its the perfect game to entertain children and occasionally, fans of the show. 
 
 
+##**Features of site: 
 
-future features to include:
+Although this site feateures one main page (which is completely responsive to fit on to any screen size) there are distinct areas on the page. There is a navigation bar above the Title header, there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player has to do is pick which hand shape they think will win against 'Sheldon' the computer. The results section displays how the game played out. There is a "Play Again" button to start the game over and there are links to other fun games in the footer section.
+
+
+
+
+
+###**Future features to include:
 
 1. In the future I would like to make it possible to have the game have a second player option so that more than one person can enjoy the game.
 
 2. Also, I think that it would be good to link this game with a series of other kid friendly games of similar skill levels, such as Tic-Tac-Toe, etc.
 
 
-testing methods and results:
+##**Testing methods and results:
 
-1. Using https://validator.w3.org/, each page was tested repeatedly to track and debug errors in the code, until all errors were eliminated in all pages of the code.
+1. Using [w3](https://validator.w3.org/), each page was tested repeatedly to track and debug errors in the code, until all errors were eliminated in all pages of the code.
 
-2. using https://jigsaw.w3.org/css-validator/validator, the css stylesheet was tested to track errors and debugged until there are no errors in the code.
+2. Using [jigsaw.w3](https://jigsaw.w3.org/css-validator/validator), the css stylesheet was tested to track errors and debugged until there are no errors in the code.
 
-3. Using Chrome Dev Tools to trouble shoot and test all pages repeatedly to track and debug the code for all the pages.
+3.  [JSHint](https://jshint.com/) was used to validate and provide methods to debug the Javascript code.
 
-
-
-
-unfixed bugs:
+4. Using Chrome Dev Tools to trouble shoot and test all pages repeatedly to track and debug the code for all the pages.
 
 
 
-Deployment:
 
-The site was deployed to GitHub pages. The steps to deploy are as follows:
+##**Unfixed bugs:
+
+
+
+##**Deployment:
+
+The site was built and deployed to [GitHub pages](https://pages.github.com/). The steps to deploy are as follows:
 
 Enter the GitHub repository.
 
@@ -42,11 +49,11 @@ Once the master branch has been selected, the page will be automatically refresh
 
 
 
-Media Credits:
+##**Media Credits:
 
-1. hero image came from Tony Florida.com "Rock paper scissors lizzard spock rules"
+1. Hero image came from Tony Florida.com "Rock paper scissors lizzard spock rules"
 
-Code credits:
+##**Code credits:
 
 1. I heavily used the Code Institutes "Love Maths" project example as the main source of inspiration for the main page set up, button setting, css styling, and JS coding (run game funciton, incremental scoring, game area arguements, event listeners and reset function. 
 
@@ -54,24 +61,24 @@ Code credits:
 
 3. Learners Bucket.com/tutorials used for code/inspiration and assistance with Javascript code for the game area arguements, the incremental scoring, event listeners and reset function: (https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
 
-4. Sebhastian.com/rock-paper-scissors-javascript used for inspiration and assistance with Javascript code for the game area arguements, the incremental scoring, event listeners and reset function: https://sebhastian.com/rock-paper-scissors-javascript/
+4. Sebhastian.com/rock-paper-scissors-javascript used for inspiration and assistance with Javascript code for the game area arguements, the incremental scoring, event listeners and reset function: (https://sebhastian.com/rock-paper-scissors-javascript/)
 
 5. This page was used for assistance/guidance for the compare function arguements:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
 
 6. Geeks for Geeks was used for code/inspiration and assistance with Javascript code for the compare funciton, the incremental scoring functions, event listeners and reset function:
-https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+(https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
 
 7. This page in Stack Overflow was heavily used to help debug the players choice buttons and to get them to work with the compare and increment funcitons: 
-https://stackoverflow.com/questions/36632749/using-onclick-with-multiple-buttons-with-javascript
+(https://stackoverflow.com/questions/36632749/using-onclick-with-multiple-buttons-with-javascript)
 
-8. This page: codepen.io/763004/pen/pPGGyP was extensivly used as refference, inspiration and guidance for the javascript 'if -else' compare function as well as the computer choice function. I did use lines of code directly/indirectly from this page for the compare and comuter choice funcitons. This page became a 'reference point' of functionality during the process of working on my project. 
+8. This page: (codepen.io/763004/pen/pPGGyP) was extensivly used as refference, inspiration and guidance for the javascript 'if -else' compare function as well as the computer choice function. I did use lines of code directly/indirectly from this page for the compare and comuter choice funcitons. This page became a 'reference point' of functionality during the process of working on my project. 
 
 9. This page from w3schools was heavily used to help debug the vicotry and reset functions as well as and to get them to work with the compare and increment funcitons: 
-https://www.w3schools.com/js/js_functions.asp
+(https://www.w3schools.com/js/js_functions.asp)
 
 10. This page from freecodecamp was heavily used to help debug the issues I was experienceing with event listeners on all functions:
- https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/
+ (https://www.freecodecamp.org/news/html-button-onclick-javascript-click-event-tutorial/)
 
-11.  https://www.stackoverflow.com/questions/66755/how-to-detect-idle-time-in-javascript was used as inspiration for/borrowed code from to create an idle timer of inactivity to pronpt the player to interact with the game with valid input.
+11. (https://www.stackoverflow.com/questions/66755/how-to-detect-idle-time-in-javascript) was used as inspiration for/borrowed code from to create an idle timer of inactivity to pronpt the player to interact with the game with valid input.
 
