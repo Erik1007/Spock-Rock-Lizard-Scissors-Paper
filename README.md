@@ -5,12 +5,18 @@ Spock - Rock - Lizard - Scissors - Paper is a fun game site that has been create
 
 The value of this game is focused on its ease of use, its accessibility and that it is fun and entertaining. The game is fairly simple and takes minimal skill to play as each round (especially when played against a computer) as it is more a game of chance than skill. Therefore, its the perfect game to entertain children and occasionally, fans of the show. 
 
+This image shows the website responsivity to screen size:
+
+![Screenshot of the resonsive website](/assets/images/responive.webp)
+
+
 
 **Features of site:** 
 
 Although this site features one main page (which is completely responsive to fit on to any screen size) there are many areas on the page each providing interactive opportunities for the user. There is a navigation bar above the Title header, there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player must do is pick which hand shape they think will win against 'Sheldon' the computer. The results section displays how the game played out. Finally, there is a "Play Again" button to start the game over as well as links to other fun games in the footer section.
 
 **The Navigation Bar and Page Title**
+
 
 
 ![Screenshot of the Nav bar and Title](/assets/images/nav-bar-heading.webp)
@@ -20,11 +26,13 @@ In the Navigation Bar, there are three links. The "Play the Game" link is an int
 The Title of the Game is featured in the center of the page so that the user knows what game they are invited to play.
 
 
+
 **The Rules of the Game:** 
 
 ![Screenshot of the Rules of the game in picture form](/assets/images/game-rules.webp)
 
 Fixed in the center of the page is a pictorial description for the rules of the game. Arrows indicate which hand formations win or lose against other hand formations. The pictures accurately show the hand formations that could be used if the player wanted to play the game in real life. Although the picture is detailed and descriptive for the rules of the game, there is also a link in the navigation bar to a website what writes out the rules (if a user would prefer to see it in text form).
+
 
 
 **The Game Area:**
@@ -38,6 +46,7 @@ When a player reaches five victories an alert shows a message as to who won the 
 At the bottom of the game area there is a "Play Again" button in case the user is dismayed with their score and they would prefer to start again, rather than to lose to Sheldon.
 
 
+
 **The Footer Area**
 
 ![Screenshot of the footer area links](/assets/images/footer-links.webp)
@@ -45,11 +54,13 @@ At the bottom of the game area there is a "Play Again" button in case the user i
 The footer area contains five external links to other websites. Four out of the five of these links will take the user to alternate websites that have games on similar interactive levels; the fifth link (the middle link) brings the user to a game site hub with hundreds of gaming choices. 
 
 
+
 **Inactivity Alert Feature**
 
 ![Screenshot of the inactivity alert](/assets/images/idle-prompt.webp)
 
 This alert is a prompt that invokes the user to engage with the program. In the case of inactivity, this alert prompt is an function designed to draw the user back into the program, to produce a valid response.
+
 
 
 **Future features to include:**
@@ -75,6 +86,7 @@ This alert is a prompt that invokes the user to engage with the program. In the 
 
 4. Using Chrome Dev Tools to trouble shoot and test all pages repeatedly to track and debug the code for all the pages. Lighthouse was used to test the performance and accessibility of the site
 ![Screenshot of the lighthouse validation test](/assets/images/lighthouse-validation.webp)
+
 
 
 **Design Process Bugs:**
@@ -103,9 +115,11 @@ Navigate to the Settings tab, then selecting the 'pages link on the left side li
 Once the master branch has been selected, the page will be automatically refreshed with a detailed green ribbon display to indicate the successful deployment.
 
 
+
 **Media Credits:**
 
 1. Hero image came from Tony Florida.com "Rock paper scissors lizard Spock rules"
+
 
 
 **Code credits:**s
