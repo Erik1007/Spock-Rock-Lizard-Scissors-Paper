@@ -1,9 +1,9 @@
 **Spock - Rock - Lizard - Scissors - Paper**
 
 
-Spock - Rock - Lizard - Scissors - Paper is a fun game site that has been created to help kids (and anyone else that like the show "The Big Bang Theory") to have a little fun and pass the time. This is a one-person game where the user is set against the computer, which has affectionally been given the name and personality traits of "Sheldon Cooper" (one of the main characters in the hit tv series). The game is a modern twist (based on Sheldon Cooper's concept) of the original folk Rochambeau game most known as: rock-paper-scissors. The twist is adding two more hand shape possibilities to statistically reduce the possibilities of the players choosing the same hand shape resulting in a draw. This program is set to be a "Best of 9" series so the first competitor to be victorious 5 times is the winner of the series.
+Spock - Rock - Lizard - Scissors - Paper is a fun game site that has been created for kids (and anyone else that like the show "The Big Bang Theory") to have a little fun and pass the time. This is a one-person game where the user is set against the computer, which has affectionally been given the name and personality traits of "Sheldon Cooper" (one of the main characters in the hit tv series). The game is a modern twist (based on Sheldon Cooper's concept) of the original folk Rochambeau game most known as: rock-paper-scissors. The twist is adding two more hand shape possibilities to statistically reduce the possibilities of the players choosing the same hand shape resulting in a draw. This program is set to be a "Best of 9" series so the first competitor to be victorious 5 times is the winner of the series.
 
-The value of this game is focused on its ease of use, its accessibility and that it is fun and entertaining. The game is fairly simple and takes minimal skill to play as each round (especially when played against a computer) as it is more a game of chance than skill. Therefore, its the perfect game to entertain children and occasionally, fans of the show. 
+The value of this game is focused on its ease of use, its accessibility and that it is fun and entertaining. The game is fairly simple and takes minimal skill to play as each round (especially when played against a computer), it is more a game of chance than skill. Therefore, its the perfect game to entertain children and fans of the show. 
 
 This image shows the website responsivity to screen size:
 
@@ -13,7 +13,7 @@ This image shows the website responsivity to screen size:
 
 **Features of site:** 
 
-Although this site features one main page (which is completely responsive to fit on to any screen size) there are many areas on the page each providing interactive opportunities for the user. There is a navigation bar above the Title header, there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player must do is pick which hand shape they think will win against 'Sheldon' the computer. The results section displays how the game played out. Finally, there is a "Play Again" button to start the game over as well as links to other fun games in the footer section.
+This site features one main page (which is completely responsive to fit on to any screen size) and  there are many areas on the page each providing interactive opportunities for the user. There is a navigation bar above the Title header, there is a picture description showing which hand formation beats another hand formation. Below the picture there are 5 buttons, one for each of the hand shapes. All the player must do is pick which hand shape they think will win against 'Sheldon' the computer. The results section displays how the game played out. Finally, there is a "Play Again" button to start the game over as well as links to other fun games in the footer section.
 
 **The Navigation Bar and Page Title**
 
@@ -21,9 +21,10 @@ Although this site features one main page (which is completely responsive to fit
 
 ![Screenshot of the Nav bar and Title](/assets/images/nav-bar-heading.webp)
 
-In the Navigation Bar, there are three links. The "Play the Game" link is an internal link which brings the user down to the "Game area" of the page. The second link is an external link which allows the user to navigate to a "Big Bang Theory" fan page which details the rules of the game in words: (https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=As%20Sheldon%20explains%2C%20%22Scissors%20cuts,has%2C%20rock%20crushes%20scissors.%22) The thrid and final link is an internal link that brings the user to the bottom of the page where there are 5 external links to other gaming sites.
+In the Navigation Bar, there are three links. The "Play the Game" link is an internal link which brings the user down to the "Game Area" of the page. The second link is an external link which allows the user to navigate to a "Big Bang Theory" fan page which details the rules of the game in words: (https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=As%20Sheldon%20explains%2C%20%22Scissors%20cuts,has%2C%20rock%20crushes%20scissors.%22) The thrid link is an internal link that brings the user to the bottom of the page where there are 5 external links to other gaming sites.
 
 The Title of the Game is featured in the center of the page so that the user knows what game they are invited to play.
+
 
 
 
@@ -32,6 +33,7 @@ The Title of the Game is featured in the center of the page so that the user kno
 ![Screenshot of the Rules of the game in picture form](/assets/images/game-rules.webp)
 
 Fixed in the center of the page is a pictorial description for the rules of the game. Arrows indicate which hand formations win or lose against other hand formations. The pictures accurately show the hand formations that could be used if the player wanted to play the game in real life. Although the picture is detailed and descriptive for the rules of the game, there is also a link in the navigation bar to a website what writes out the rules (if a user would prefer to see it in text form).
+
 
 
 
@@ -99,9 +101,10 @@ Multiple attempts were made to develop a function that took in the players choic
 3.  There were significant issues surrounding the reset function that ends the game when a player reaches a certain threshold as well as clearing the scoreboard and results area. 
 
 
+
 **Unfixed bugs:**
 
-As of now, there is only one "glitch", when the game resets, the results are does not clen out and the results of the last game are still present. It does not affect the game and there are no error codes thrown, I would just prefer that the results section clear out to an empty field to start fresh. 
+As of now, there is only one "glitch", when the game resets, the results area does not clen out and the results of the last game are still present. It does not affect the game and there are no error codes thrown, I would just prefer that the results section clear out to an empty field to start fresh. 
 
 
 **Deployment:**
@@ -116,13 +119,15 @@ Once the master branch has been selected, the page will be automatically refresh
 
 
 
+
 **Media Credits:**
 
 1. Hero image came from Tony Florida.com "Rock paper scissors lizard Spock rules"
 
 
 
-**Code credits:**s
+
+**Code credits:**
 
 1. I heavily used the Code Institutes "Love Maths" project example as the main source of inspiration for the main page set up, button setting, css styling, and JS coding (run game function, incremental scoring, game area arguments, event listeners and reset function. 
 
