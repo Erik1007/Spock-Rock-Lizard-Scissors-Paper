@@ -3,11 +3,12 @@
 
 Spock - Rock - Lizard - Scissors - Paper is a fun game site that has been created for kids (and anyone else that like the show "The Big Bang Theory") to have a little fun and pass the time. This is a one-person game where the user is set against the computer, which has affectionally been given the name and personality traits of "Sheldon Cooper" (one of the main characters in the hit tv series). The game is a modern twist (based on Sheldon Cooper's concept) of the original folk Rochambeau game most known as: rock-paper-scissors. The twist is adding two more hand shape possibilities to statistically reduce the possibilities of the players choosing the same hand shape resulting in a draw. This program is set to be a "Best of 9" series so the first competitor to be victorious 5 times is the winner of the series.
 
-The value of this game is focused on its ease of use, its accessibility and that it is fun and entertaining. The game is fairly simple and takes minimal skill to play as each round (especially when played against a computer), it is more a game of chance than skill. Therefore, its the perfect game to entertain children and fans of the show. 
+The value of this game is focused on that it is fun and entertaining, that it is easy of use and very accessibility. The game is fairly simple and takes minimal skill to play as each round (especially when played against a computer), it is more a game of chance than skill. Therefore, its the perfect game to entertain children and fans of the show. The point fo the game is for the player to have the ability to unwind, relax and have some fun; its value lies in its ability to improve ones quality of life through entertainment.
 
 This image shows the website responsivity to screen size:
 
 ![Screenshot of the resonsive website](/assets/images/responive.webp)
+
 
 
 
@@ -19,9 +20,10 @@ This site features one main page (which is completely responsive to fit on to an
 
 
 
+
 ![Screenshot of the Nav bar and Title](/assets/images/nav-bar-heading.webp)
 
-In the Navigation Bar, there are three links. The "Play the Game" link is an internal link which brings the user down to the "Game Area" of the page. The second link is an external link which allows the user to navigate to a "Big Bang Theory" fan page which details the rules of the game in words: (https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=As%20Sheldon%20explains%2C%20%22Scissors%20cuts,has%2C%20rock%20crushes%20scissors.%22) The thrid link is an internal link that brings the user to the bottom of the page where there are 5 external links to other gaming sites.
+In the Navigation Bar, there are three links. The "Play the Game" link is an internal link which brings the user down to the "Game Area" of the page. The second link is an external link which allows the user to navigate to a "Big Bang Theory" fan page which details the rules of the game in words: [Big Bang Theory](https://the-big-bang-theory.com/rock-paper-scissors-lizard-spock/#:~:text=As%20Sheldon%20explains%2C%20%22Scissors%20cuts,has%2C%20rock%20crushes%20scissors.%22) The thrid link is an internal link that brings the user to the bottom of the page where there are 5 external links to other gaming sites.
 
 The Title of the Game is featured in the center of the page so that the user knows what game they are invited to play.
 
@@ -43,9 +45,10 @@ Fixed in the center of the page is a pictorial description for the rules of the 
 
 This is the main area of activity for the user to interact with the program. There are five main buttons that the player can choose from, each button represents one of the possible hand formations. The buttons are interactive in that they change color when they are pressed. When the player chooses a hand shape, the game begins! Instantly the computer, “Sheldon", makes its choice and the result of the game is displayed in the results section. The scoreboard shows who the victor is simultaneously. The results area displays the outcome of each selection made by the player and the scoreboard shows a running tally for the series.
 
-When a player reaches five victories an alert shows a message as to who won the series; When this alert message shows and the user clicks "ok" on the alert, the game is reset to play again.
+When a player reaches five victories an alert shows a message as to who won the series; when this alert message shows and the user clicks "ok" on the alert, the game is reset to play again.
 
 At the bottom of the game area there is a "Play Again" button in case the user is dismayed with their score and they would prefer to start again, rather than to lose to Sheldon.
+
 
 
 
@@ -57,11 +60,13 @@ The footer area contains five external links to other websites. Four out of the 
 
 
 
+
 **Inactivity Alert Feature**
 
 ![Screenshot of the inactivity alert](/assets/images/idle-prompt.webp)
 
 This alert is a prompt that invokes the user to engage with the program. In the case of inactivity, this alert prompt is an function designed to draw the user back into the program, to produce a valid response.
+
 
 
 
@@ -71,7 +76,6 @@ This alert is a prompt that invokes the user to engage with the program. In the 
 
 2. In the future, I would like to add more animations to this site, for example: flashing results response areas, appearing countdown timers between choice selections, etc.  
 
-3. Also, I think that it would be good to link this game with a series of other kid friendly games of similar skill levels, such as Tic-Tac-Toe, etc.
 
 
 
@@ -91,6 +95,7 @@ This alert is a prompt that invokes the user to engage with the program. In the 
 
 
 
+
 **Design Process Bugs:**
 
 1.  There were significant bugs involved in the "Compare" function
@@ -104,14 +109,17 @@ Multiple attempts were made to develop a function that took in the players choic
 
 
 
+
 **Unfixed bugs:**
 
 As far as I am aware as of now, there are no unfixed bugs that prevent the site or the game from functioning as normal. That is not to say that there are not any bugs, it is just to say that I have fixed every bug that I am aware of.
 
 
+
+
 **Deployment:**
 
-The site was built and deployed to [GitHub pages] (https://pages.github.com/). The steps to deploy are as follows:
+The site was built and deployed to [GitHub pages](https://pages.github.com/). The steps to deploy are as follows:
 
 Enter the GitHub repository.
 

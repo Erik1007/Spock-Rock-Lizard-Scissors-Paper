@@ -155,8 +155,6 @@ function reset() {
   document.getElementById("pScore").textContent = pScore;
   document.getElementById("cScore").textContent = cScore;
   document.getElementById("result_display").innerHTML = "";
-
-
 }
 
 // The victory threshold function to reset the game:
